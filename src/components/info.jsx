@@ -1,15 +1,11 @@
 import React from "react";
-import "./info.css";
+import "./info.scss";
 
-class Info extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Weather forecast</h1>
-        <h2>Check the weather in your city!</h2>
-      </div>
-    );
-  }
-}
+const Info = ({ title, checkWeather }) => (
+  <div>
+    <h1> {title}</h1>
+    <h2> {checkWeather} </h2>
+  </div>
+);
 
 export default Info;
