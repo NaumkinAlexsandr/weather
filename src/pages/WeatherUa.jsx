@@ -3,6 +3,7 @@ import Info from "../components/Info";
 import Form from "../components/Form";
 import WeatherInfo from "../components/WeatherInfo";
 import WeatherFullInfo from "../components/WeatherFullInfo";
+import { Helmet } from "react-helmet";
 
 const API_Key = "cdfaba94122082bb2e215c5851761c88";
 
@@ -134,57 +135,73 @@ export default function WeatherUa() {
   };
 
   return (
-    <div id="weather-form">
-      <Info
-        title="Прогноз погоди"
-        checkWeather="Перевірте погоду у вашому місті!"
-      />
-      <Form
-        placeholder="Введіть своє місто"
-        weatherMethod={gettingWeather}
-        moreWeatherMethod={gettingMoreWeather}
-        info="Отримати погоду"
-        moreInfo="Більше інформації"
-        clearDataMethods={[clearWeatherData, clearWeatherMoreData]}
-      />
-      <WeatherInfo
-        date={weatherData.date}
-        temp={weatherData.temp}
-        one="Температура:"
-        city={weatherData.city}
-        two="Місто:"
-        country={weatherData.country}
-        pressure={weatherData.pressure}
-        three="Тиск:"
-        humidity={weatherData.humidity}
-        four="Давление:"
-        error={weatherData.error}
-      />
-      <WeatherFullInfo
-        date={weatherMoreData.date}
-        temp={weatherMoreData.temp}
-        one="Температура:"
-        feels_like={weatherMoreData.feels_like}
-        three="Відчувається, як:"
-        temp_min={weatherMoreData.temp_min}
-        four="Температура min:"
-        temp_max={weatherMoreData.temp_max}
-        five="Температура max:"
-        city={weatherMoreData.city}
-        two="Місто:"
-        country={weatherMoreData.country}
-        pressure={weatherMoreData.pressure}
-        six="Тиск:"
-        humidity={weatherMoreData.humidity}
-        seven="Давление:"
-        speed={weatherMoreData.speed}
-        eight="Швидкість вітру:"
-        gust={weatherMoreData.gust}
-        nine="Порив вітру:"
-        sea_level={weatherMoreData.sea_level}
-        ten="Рівень моря:"
-        error={weatherMoreData.error}
-      />
-    </div>
+    <>
+      <Helmet>
+        <title>Прогноз погоди</title>
+        <meta name="content-type" content="text/html; charset=UTF-8"></meta>
+        <meta name="description" content="This is my React Native app"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        ></meta>
+        <meta name="keywords" content="Weather forecast, Прогноз погоди"></meta>
+        <meta name="author" content="Naumkin Alexsander"></meta>
+        <meta name="rating" content="general"></meta>
+        <meta name="language" content="en"></meta>
+        <meta name="language" content="ua"></meta>
+      </Helmet>
+      <div id="weather-form">
+        <Info
+          title="Прогноз погоди"
+          checkWeather="Перевірте погоду у вашому місті!"
+        />
+        <Form
+          placeholder="Введіть своє місто"
+          weatherMethod={gettingWeather}
+          moreWeatherMethod={gettingMoreWeather}
+          info="Отримати погоду"
+          moreInfo="Більше інформації"
+          clearDataMethods={[clearWeatherData, clearWeatherMoreData]}
+        />
+        <WeatherInfo
+          date={weatherData.date}
+          temp={weatherData.temp}
+          one="Температура:"
+          city={weatherData.city}
+          two="Місто:"
+          country={weatherData.country}
+          pressure={weatherData.pressure}
+          three="Тиск:"
+          humidity={weatherData.humidity}
+          four="Давление:"
+          error={weatherData.error}
+        />
+        <WeatherFullInfo
+          date={weatherMoreData.date}
+          temp={weatherMoreData.temp}
+          one="Температура:"
+          feels_like={weatherMoreData.feels_like}
+          three="Відчувається, як:"
+          temp_min={weatherMoreData.temp_min}
+          four="Температура min:"
+          temp_max={weatherMoreData.temp_max}
+          five="Температура max:"
+          city={weatherMoreData.city}
+          two="Місто:"
+          country={weatherMoreData.country}
+          pressure={weatherMoreData.pressure}
+          six="Тиск:"
+          humidity={weatherMoreData.humidity}
+          seven="Давление:"
+          speed={weatherMoreData.speed}
+          eight="Швидкість вітру:"
+          gust={weatherMoreData.gust}
+          nine="Порив вітру:"
+          sea_level={weatherMoreData.sea_level}
+          ten="Рівень моря:"
+          error={weatherMoreData.error}
+        />
+      </div>
+    </>
   );
 }
