@@ -1,17 +1,24 @@
-import React from "react";
+import React, { FC, FormEvent } from "react";
 import "./form.scss";
+import { IFormProps } from "../../types/interfaces";
 
-const Form = ({
+const Form: FC<IFormProps> = ({
   weatherMethod,
   moreWeatherMethod,
   placeholder,
   info,
   moreInfo,
   clearDataMethods,
+  checkWeather,
 }) => {
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (event.nativeEvent.submitter.value === "more") {
+    const target = event.currentTarget;
+    const submitter = target.querySelector(
+      'button[type="submit"]:focus'
+    ) as HTMLButtonElement;
+
+    if (submitter.value === "more") {
       moreWeatherMethod(event);
     } else {
       weatherMethod(event);
@@ -23,9 +30,10 @@ const Form = ({
   };
 
   return (
-    <form id="cityForm" onSubmit={handleFormSubmit}>
+    <form id="searchForm" onSubmit={handleFormSubmit}>
+      <h3> {checkWeather} </h3>
       <input type="text" name="city" placeholder={placeholder} />
-      <div>
+      <div className="buttonConteiner">
         <button onClick={handleClick} type="submit" value="weather">
           {info}
         </button>
