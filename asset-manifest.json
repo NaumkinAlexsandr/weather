@@ -1,14 +1,31 @@
 {
   "files": {
-    "main.css": "/weather/static/css/main.a73c8277.css",
-    "main.js": "/weather/static/js/main.37c5a133.js",
+    "main.css": "/weather/static/css/main.ad942a2e.css",
+    "main.js": "/weather/static/js/main.01bab523.js",
+    "static/media/heavyRain.png": "/weather/static/media/heavyRain.b6420fab18d74ac2016e.png",
+    "static/media/heavyThunderstorm.png": "/weather/static/media/heavyThunderstorm.05829f2f6963fb4a4b9e.png",
+    "static/media/snow.png": "/weather/static/media/snow.797bd437621d1f621bff.png",
+    "static/media/rainSnow.png": "/weather/static/media/rainSnow.3889283e67d4d9bcb7f7.png",
+    "static/media/brokenClouds.png": "/weather/static/media/brokenClouds.4f31b367b8da006b608d.png",
+    "static/media/rain.png": "/weather/static/media/rain.c9a6d566599baf0d9950.png",
+    "static/media/drizzle.png": "/weather/static/media/drizzle.c5c0a96f274d83d5cfde.png",
+    "static/media/heavySnow.png": "/weather/static/media/heavySnow.eb427030a54c43b3148e.png",
     "static/media/background.jpg": "/weather/static/media/background.c391f9555ffb3b8b336f.jpg",
+    "static/media/tornado.png": "/weather/static/media/tornado.7c1d29081d281b079fda.png",
+    "static/media/showerRain.png": "/weather/static/media/showerRain.4545a434975f3e2492b7.png",
+    "static/media/dust.png": "/weather/static/media/dust.08bf0d14eba077690efc.png",
+    "static/media/scatteredClouds.png": "/weather/static/media/scatteredClouds.45bd1dbc8e6adfbfaef1.png",
+    "static/media/squalls.png": "/weather/static/media/squalls.3cc54c8ee4cfb128b57a.png",
+    "static/media/fewClouds.png": "/weather/static/media/fewClouds.45c26c2454bdebd05992.png",
+    "static/media/sun.png": "/weather/static/media/sun.8aa09244e386a1c74ee6.png",
+    "static/media/thunderstorm.png": "/weather/static/media/thunderstorm.a05769b6b5f17d3c12d8.png",
+    "static/media/smoke.png": "/weather/static/media/smoke.be868c6ae47df9c0f358.png",
     "index.html": "/weather/index.html",
-    "main.a73c8277.css.map": "/weather/static/css/main.a73c8277.css.map",
-    "main.37c5a133.js.map": "/weather/static/js/main.37c5a133.js.map"
+    "main.ad942a2e.css.map": "/weather/static/css/main.ad942a2e.css.map",
+    "main.01bab523.js.map": "/weather/static/js/main.01bab523.js.map"
   },
   "entrypoints": [
-    "static/css/main.a73c8277.css",
-    "static/js/main.37c5a133.js"
+    "static/css/main.ad942a2e.css",
+    "static/js/main.01bab523.js"
   ]
 }
