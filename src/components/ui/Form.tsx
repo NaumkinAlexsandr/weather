@@ -1,6 +1,6 @@
 import React, { FC, FormEvent } from "react";
 import "./form.scss";
-import { IFormProps } from "../../types/interfaces";
+import { IFormProps } from "@type/interfaces";
 
 const Form: FC<IFormProps> = ({
   weatherMethod,

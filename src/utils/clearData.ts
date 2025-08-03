@@ -1,6 +1,6 @@
 import React from "react";
-import { IWeatherData } from "../types/interfaces";
-import { IFullWeatherData } from "../types/interfaces";
+import { IWeatherData } from "@type/interfaces";
+import { IFullWeatherData } from "@type/interfaces";
 
 export const clearData = (
   setter: React.Dispatch<React.SetStateAction<IWeatherData>>

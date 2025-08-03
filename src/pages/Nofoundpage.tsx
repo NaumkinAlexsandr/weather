@@ -6,10 +6,11 @@ function NofoundPage() {
   return (
     <>
       <Meta title="Page not found" />
-      <div className="container">
-        <h1>
-          Page not found <Link to="/weather/">Go Home</Link>
-        </h1>
+      <div className="notFound">
+        <h1>Page not found</h1>
+        <Link className="link" to="/">
+          Go Home
+        </Link>
       </div>
     </>
   );

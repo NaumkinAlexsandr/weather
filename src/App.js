@@ -7,10 +7,10 @@ import "./App.scss";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/weather">
       <Routes>
-        <Route path="/weather" element={<WeatherUa />} />
-        <Route path="/weather/en" element={<WeatherEn />} />
+        <Route path="/" element={<WeatherUa />} />
+        <Route path="/en" element={<WeatherEn />} />
         <Route path="*" element={<NofoundPage />} />
       </Routes>
     </BrowserRouter>

@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import "./weather.scss";
-import map from "../../img/map.png";
-import satellite from "../../img/satellite.png";
-import { IWeatherData } from "../../types/interfaces";
-import { IWeatherMetadata } from "../../types/interfaces";
+import map from "@img/map.png";
+import satellite from "@img/satellite.png";
+import { IWeatherData } from "@type/interfaces";
+import { IWeatherMetadata } from "@type/interfaces";
 
 interface IWeatherInfoProps extends IWeatherData, IWeatherMetadata {}
 const WeatherInfo: FC<IWeatherInfoProps> = (props) => {

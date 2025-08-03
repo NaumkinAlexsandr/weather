@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { weatherIcons } from "../core/weatherIcons"; // Убедитесь, что путь правильный
-import { clearData } from "../core/clearData";
-import { IWeatherData } from "../types/interfaces";
+import { weatherIcons } from "@constants/weatherIcons";
+import { clearData } from "@utils/clearData";
+import { IWeatherData } from "@type/interfaces";
 
 const API_Key = "cdfaba94122082bb2e215c5851761c88";
 

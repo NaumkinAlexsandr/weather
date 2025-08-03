@@ -1,10 +1,10 @@
 import React, { FC, useState } from "react";
 import { Link } from "react-router-dom";
 import "./header.scss";
-import { IHeaderTitle } from "../../types/interfaces";
-import Lang from "../../img/languageIcon/language.png";
-import UA from "../../img/languageIcon/ukraine.png";
-import UK from "../../img/languageIcon/united-kingdom.png";
+import { IHeaderTitle } from "@type/interfaces";
+import Lang from "@languageIcon/language.png";
+import UA from "@languageIcon/ukraine.png";
+import UK from "@languageIcon/united-kingdom.png";
 
 const Header: FC<IHeaderTitle> = ({ title }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,10 +20,10 @@ const Header: FC<IHeaderTitle> = ({ title }) => {
         </button>
         {isMenuOpen && (
           <div id="languages">
-            <Link className="btn" to="/weather/en">
+            <Link className="btn" to="/en">
               <img src={UK} />
             </Link>
-            <Link className="btn" to="/weather">
+            <Link className="btn" to="/">
               <img src={UA} />
             </Link>
           </div>

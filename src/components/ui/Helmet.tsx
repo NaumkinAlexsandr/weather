@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { Helmet } from "react-helmet";
-import { IHelmetProps } from "../../types/interfaces";
+import { IHelmetProps } from "@type/interfaces";
 
 const Meta: FC<IHelmetProps> = ({ title }) => {
   return (

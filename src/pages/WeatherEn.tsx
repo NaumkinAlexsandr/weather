@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Form from "../components/ui/Form";
-import WeatherInfo from "../components/ui/WeatherInfo";
-import WeatherFullInfo from "../components/ui/WeatherFullInfo";
-import Meta from "../components/ui/Helmet";
-import { useWeather } from "../api/useWeather";
-import { useFullWeather } from "../api/useFullWeather";
-import Header from "../components/layout/Header";
+import Form from "@components/ui/Form";
+import WeatherInfo from "@components/ui/WeatherInfo";
+import WeatherFullInfo from "@components/ui/WeatherFullInfo";
+import Meta from "@components/ui/Helmet";
+import { useWeather } from "@hoocks/useWeather";
+import { useFullWeather } from "@hoocks/useFullWeather";
+import Header from "@components/header/Header";
 
 export default function WeatherEn() {
   const { weatherData, gettingWeather, clearWeatherData } = useWeather();

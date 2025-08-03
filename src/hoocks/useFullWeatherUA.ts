@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { weatherIcons } from "../core/weatherIcons"; // Убедитесь, что путь правильный
-import { clearFullData } from "../core/clearData";
-import { IFullWeatherData } from "../types/interfaces";
+import { weatherIcons } from "@constants/weatherIcons";
+import { clearFullData } from "@utils/clearData";
+import { IFullWeatherData } from "@type/interfaces";
 
 const API_Key = "cdfaba94122082bb2e215c5851761c88";
 
-export const useFullWeather = () => {
+export const useFullWeatherUA = () => {
   const [weatherMoreData, setWeatherMoreData] = useState<IFullWeatherData>({
     temp: undefined,
     city: undefined,
@@ -37,7 +37,7 @@ export const useFullWeather = () => {
     const city = cityInput.value;
     if (city) {
       const api_url = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_Key}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ua&appid=${API_Key}&units=metric`
       );
       const data = await api_url.json();
       console.log(data);

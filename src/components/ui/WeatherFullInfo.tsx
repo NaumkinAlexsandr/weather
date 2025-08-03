@@ -1,9 +1,9 @@
 import React, { FC } from "react";
 import "./weather.scss";
-import map from "../../img/map.png";
-import satellite from "../../img/satellite.png";
-import { IFullWeatherData } from "../../types/interfaces";
-import { IFullWeatherMetadata } from "../../types/interfaces";
+import map from "@img/map.png";
+import satellite from "@img/satellite.png";
+import { IFullWeatherData } from "@type/interfaces";
+import { IFullWeatherMetadata } from "@type/interfaces";
 
 interface IFullWeatherInfoProps
   extends IFullWeatherData,

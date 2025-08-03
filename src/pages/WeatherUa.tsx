@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Form from "../components/ui/Form";
-import WeatherInfo from "../components/ui/WeatherInfo";
-import WeatherFullInfo from "../components/ui/WeatherFullInfo";
-import Meta from "../components/ui/Helmet";
-import { useWeatherUA } from "../api/useWeatherUA";
-import { useFullWeatherUA } from "../api/useFullWeatherUA";
-import Header from "../components/layout/Header";
+import Form from "@components/ui/Form";
+import WeatherInfo from "@components/ui/WeatherInfo";
+import WeatherFullInfo from "@components/ui/WeatherFullInfo";
+import Meta from "@components/ui/Helmet";
+import { useWeatherUA } from "@hoocks/useWeatherUA";
+import { useFullWeatherUA } from "@hoocks/useFullWeatherUA";
+import Header from "@components/header/Header";
 
 export default function WeatherUa() {
   const { weatherData, gettingWeather, clearWeatherData } = useWeatherUA();
